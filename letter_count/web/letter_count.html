@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Letter_frequency</title>
+    <link rel="stylesheet" href="letter_count.css">
+  </head>
+  <body>
+    <div style="text-align:center"><h1>Fréquences des lettres</h1></div> 
+    <p align="right"><font color=red>by MUAHE</font></p>
+
+    <section>
+    <Table>
+      <TR>
+        <TD>
+            <label>Saisir le texte à analyser :</label>
+            <textarea id="textToAnalyse" rows=30 cols=80></textarea>
+        </TD>
+        <TD>
+            <button id="frequency">Frequency</button>
+            <br/>
+            <button id="clear" >&nbsp;&nbsp;&nbsp;&nbsp;Clear&nbsp;&nbsp;&nbsp;&nbsp;</button>
+        </TD>
+        <TD>
+            <label>Résultat de l'analyse :</label>
+            <textarea id="letters" rows=30 cols=80 readonly></textarea>
+        </TD>
+      </TR>
+    </Table>  
+    </section>
+
+    <script type="application/dart" src="letter_count.dart"></script>
+    <script src="packages/browser/dart.js"></script>
+  </body>
+</html>
