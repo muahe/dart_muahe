@@ -1,0 +1,7 @@
+name: ex04_dartlero_task
+author: Mustapha Aherfoune
+description: Exemple d'utilisation de Dartlero pour créer un modèle de l'application ToDoMVC
+homepage: https://github.com/muahe
+dependencies:
+  browser: any
+  dartlero: any

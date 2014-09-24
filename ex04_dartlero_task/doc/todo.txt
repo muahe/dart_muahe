@@ -1,0 +1,19 @@
+version 0.1 :
+
++ Model des taches de l'application TodoMVC prepare avec le framework Dartlero
++ Test unitaire du model cree.
++ application TodoMVC exploitant le model cree.
+	+ ajout de taches dans la liste des taches
+	+ suppression de taches de la liste.
+	+ affichage dynamique des compteurs de toutes 
+		les taches, des taches en cours et des taches en cours.
+	+ changer le statut d'une tache (de en cours vers completee et l'inverse).
+ 
+=====================================
+
+To Do :
+
++ ajouter bouton pour filtrer seulement les taches completee ou en cours.
++ ajouter des checkbox ou une selection multiple pour permettre 
+	de supprimer plusieurs taches en meme temps
+	

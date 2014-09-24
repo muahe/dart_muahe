@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ex04_dartlero_task.css">
+    <title>ex04_dartlero_task</title>
+  </head>
+ 
+  <body>   
+
+    <h1>todos</h1>
+    <div id='count'></div>
+    <div id='countCompleted'></div>
+    <div id='countUncompleted'></div>
+    <input id="new-todo" placeholder="Qu'avez vous besoin de faire?" autofocus="" on-change="">
+    <div id="fixDiv" class="fixedDiv">
+      <ul id="todo-list">
+
+      </ul>
+    </div>
+    
+    <div align="center" class="redDiv"> Cliquer une fois pour compléter une tache<br/>double-cliquer pour supprimer une tache</div>
+    <script type="application/dart" src="dartlero_task.dart"></script>
+    <!-- for this next line to work, your pubspec.yaml file must have a dependency on 'browser' -->
+    <script src="packages/browser/dart.js"></script>
+  </body>
+</html>

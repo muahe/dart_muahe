@@ -1,0 +1,119 @@
+/* base.css overrides */
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  line-height: 1.4em;
+  background: #eaeaea url('bg.png');
+  color: #4d4d4d;
+  width: 550px;
+  margin: 0 auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -ms-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+body > header {
+  padding-top: 22px;
+  margin-bottom: -5px;
+}
+h1 {
+  width: 100%;
+  font-size: 70px;
+  font-weight: bold;
+  text-align: center;
+  color: #b3b3b3;
+  color: rgba(255, 255, 255, 0.3);
+  text-shadow: -1px -1px rgba(0, 0, 0, 0.2);
+  -webkit-text-rendering: optimizeLegibility;
+  -moz-text-rendering: optimizeLegibility;
+  -ms-text-rendering: optimizeLegibility;
+  -o-text-rendering: optimizeLegibility;
+  text-rendering: optimizeLegibility;
+}
+#new-todo {
+  padding: 16px 16px 16px 60px;
+  border: none;
+  background: rgba(0, 0, 0, 0.02);
+  z-index: 2;
+  box-shadow: none;
+}
+#new-todo, .edit {
+  position: relative;
+  margin: 0;
+  width: 100%;
+  font-size: 24px;
+  font-family: inherit;
+  line-height: 1.4em;
+  border: 0;
+  outline: none;
+  color: inherit;
+  padding: 6px;
+  border: 1px solid #999;
+  box-shadow: inset 0px -1px 5px 0px rgba(0,0,0,0.2);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -ms-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+}
+#todo-list {
+  margin: 0px;
+  padding: 0px;
+  font-size: 30px;
+  list-style: none outside none;
+  cursor:pointer;
+  position: relative;
+  margin: 0;
+  width: 100%;
+  font-size: 24px;
+  font-family: inherit;
+  line-height: 1.4em;
+  border: 0;
+  outline: none;
+  color: inherit;
+  padding: 6px;
+  border: 1px solid #999;
+  box-shadow: inset 0px -1px 5px 0px rgba(0,0,0,0.2);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -ms-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+}
+#todo-list li:hover {
+  color: red;
+  font-size: px;
+  cursor:pointer;
+}
+
+li.lineThrough {
+  color: red;
+  font-size: px;
+  cursor:pointer;
+  text-decoration:line-through;
+}
+div.fixedDiv {
+  width: 550px;
+  height: 300px;
+  overflow :auto;
+}
+
+div.redDiv {
+  color: red;
+  font-size: px;
+}
+
+}
