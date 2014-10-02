@@ -1,7 +1,6 @@
 import 'package:unittest/unittest.dart';
-import 'package:dartlero/dartlero.dart';
+//import 'package:dartlero/dartlero.dart';
 import 'package:ex04_dartlero_task/ex04_dartlero_task.dart';
-
 
 testTasks(Tasks tasks) {
   group("Testing Tasks", () {
@@ -167,9 +166,7 @@ testTasks(Tasks tasks) {
       tasks.display('From JSON to Tasks');
     });
   });
-  
 }
-
 
 initDisplayModel() {
   TaskModel taskModel = new TaskModel();

@@ -1,5 +1,5 @@
 import 'dart:html';
-import 'package:dartlero/dartlero.dart';
+//import 'package:dartlero/dartlero.dart';
 import 'package:ex04_dartlero_task/ex04_dartlero_task.dart';
 
 
@@ -10,7 +10,6 @@ DivElement countDiv,completedCountDiv, uncompletedCountDiv;
 TaskModel taskModel = new TaskModel();
 Tasks tasks = taskModel.tasks;
 const AUTO_SEQ = 0;
-
 
 main() {
   inputTask = querySelector('#new-todo');
@@ -23,7 +22,6 @@ main() {
 }
 
 void addItem(e) {
-
  // inputTask.value = 'je suis la';
   //tasks.
   var task = new Task();
@@ -34,7 +32,6 @@ void addItem(e) {
   tasks.add(task);
   
   printLine(task);
-  
 }
 
 void changeStatus(e){
@@ -47,7 +44,6 @@ void changeStatus(e){
     clickedElem.classes.clear();
   }
   updateCounter();
-
 }
 
 void removeLine(e){
@@ -56,7 +52,6 @@ void removeLine(e){
   clickedElem.remove();
   tasks.remove(task); 
   updateCounter();
-
 }
 
 void updateCounter(){
@@ -69,7 +64,6 @@ void updateCounter(){
               + completedTasks.length.toString();
   uncompletedCountDiv.text = 'nombre de taches en cours ' 
               + incompletedTasks.length.toString();
-  
 }
 
 void printLine(task) {
@@ -83,5 +77,4 @@ void printLine(task) {
   inputTask.value = '';
   list.children.add(newListTask);
   updateCounter();
-  
 }
