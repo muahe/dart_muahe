@@ -1,0 +1,7 @@
+name: ex06_dartlero_contact
+author: Mustapha Aherfoune
+description: Exemple d'utilisation d'HTML5, CSS et local storage pour créer une application de gestion des contacts
+homepage: https://github.com/muahe
+dependencies:
+  browser: any
+  dartlero: any

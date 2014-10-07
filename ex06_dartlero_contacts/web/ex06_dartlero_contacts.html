@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="ex06_dartlero_contacts.css">
+    <title>Contact Application avec Dartlero</title>
+  </head>
+ 
+  <body>   
+<h1>EX06 : Contacts Apps :</h1>
+    <table>
+      <tr>
+        <td>
+          <div id="contact-form" class="clearfix">
+            <h2>Mise à jour Contacts :</h2>
+            <ul id="errors" class="">
+              <li id="info">Des erreurs ont été rencontrées :</li>
+            </ul>
+            <p id="success">Thanks for your message! We will get back to you ASAP!</p>
+            <div id="confirm"> 
+              <span id="msgConfirm"></span>
+              <input type="button" id="oui" value="Oui">
+              <input type="button" id="non" value="Non">
+              <input id="clickedItem" type="hidden" />
+            </div>
+            <form name="contact" id="contact"  autocomplete>
+            
+              <input id="idContact" type="hidden" />
+              <label for="nom">Nom : <span class="required">*</span></label>              
+              <input type="text" id="nom" name="nom" value="" placeholder="Votre Nom" required="required" autofocus="autofocus" />
+               
+              <label for="prenom">Prénom : <span class="required">*</span></label>              
+              <input type="text" id="prenom" name="prenom" value="" placeholder="Votre Prénom" required="required" autofocus="autofocus" />
+
+
+              <label for="courriel">Adresse courriel : <span class="required">*</span></label>
+              <input type="email" id="courriel" name="courriel" value="" placeholder="Votre adresse courriel" required="required" />
+               
+              <label for="telephone">Téléphone : <span class="required">*</span></label>
+              <input type="tel" id="tel" name="tel" value="" required placeholder="(000)000-0000"
+                   pattern="\([0-9]{3}\)[0-9]{3}-[0-9]{4}"/>
+               
+
+              <span id="loading"></span>
+              <input type="submit"  value="Ajouter" id="submitButton" />
+              <input type="reset" value="Effacer" id="resetButton" />
+              <input type="button" value="Supprimer" id="suppButton" />
+              <br><br>
+              <p id="req-field-desc"><span class="required">*</span> Indique les champs requis</p>
+              <input type="button" value="Vider Le stockage local" id="clearLocalStorage" />
+            </form>
+          </div>
+        </td>
+        <td>
+          <div id="contact-form" class="clearfix">
+            <h2>Liste des Contacts :</h2>
+            <div id="listeContact">
+            </div>
+          </div>        
+        </td>      
+      </tr>
+    </table>    
+    
+    <script type="application/dart" src="dartlero_contacts.dart"></script>
+    <script src="packages/browser/dart.js"></script>
+  </body>
+</html>
