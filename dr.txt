@@ -1,8 +1,19 @@
+ex06
+
+20/20
+excellent
+
+votre nom dans README.md
+
+SVPL utilisez .gitignore (voir mes exemples)
+en particulier pour éviter l'envoi de packages à GitHub
+
 ex04
 
 20/20
-
 excellent
+
+votre nom dans README.md
 
 SVPL utilisez .gitignore (voir mes exemples)
 en particulier pour éviter l'envoi de packages à GitHub
