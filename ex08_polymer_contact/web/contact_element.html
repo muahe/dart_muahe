@@ -1,0 +1,73 @@
+<link rel="import" href="packages/polymer/polymer.html">
+
+
+<link rel="import" href="contact_form.html">
+
+<polymer-element name="contact-element" attributes="contact">
+  <template>
+    <style>
+      :host {
+        display: block;
+        margin: 0px;
+        margin: 12px 0;
+
+      }
+      .contact {
+          background-color:#F2F7F9;
+          width:100%;       /*465px;*/
+          height:100%;       /*480px;*/
+          padding:5px;
+          margin: auto auto;    
+          border: 6px solid #8FB5C1;
+          -moz-border-radius:15px;
+          -webkit-border-radius:15px;
+          border-radius:15px;
+          position:relative;
+      }
+      .contact .field {
+        /*margin-bottom: 8px;*/
+        font-size: 100%;
+        margin: 0px;
+        padding: 0px;
+      }
+      .contact .field h2 {
+        font-weight: bold;
+        margin: 0px;
+        padding: 0px;
+        font-size: 120%;
+      }
+      .small {
+        font-size: 80%;
+        color: Red;
+        cursor:pointer;
+      }
+    </style>
+    <div on-formNotNeeded="{{cancelEditing}}"
+         on-contactvalidated="{{updateContact}}">
+      <template if="{{!editing}}">
+        <div class="contact">
+          <div class="field">
+            <h2>{{contact.nom}}, {{contact.prenom}}</h2>
+          </div>
+          <div class="field">
+            <p><b>Courriel : </b>{{contact.courriel}}</p>
+          </div>
+          <div class="field">
+            <p><b>Téléphone : </b>{{contact.tel}}</p>
+          </div>                    
+          <div class="field">
+            <p><b>Type: </b>{{contact.type}}</p>
+          </div>
+          <div class="field">
+            <span on-click="{{startEditing}}" class="small">Modifier</span> |
+            <span on-click="{{deleteContact}}" class="small">Supprimer</span>
+          </div>
+        </div>
+      </template>
+      <template if="{{editing}}">
+        <contact-form contact="{{contact}}"></contact-form>
+      </template>
+    </div>
+  </template>
+  <script type="application/dart" src="contact_element.dart"></script>
+</polymer-element>
